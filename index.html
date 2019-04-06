@@ -1,60 +1,621 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  
-  <style>
- .container .row{
-     padding-top:100px;
- }
- body{
-     background-color: black;
- }
-  </style>
+<style>
+body {margin:0;}
+.navbar {
+  overflow: hidden;
+  background-color:white;
+  position: fixed;
+  top: 0;
+  width: 110%;
+  border-bottom: 1px outset grey;
+  z-index:1;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #99a1af;
+  text-align: center;
+  padding: 8px 18px;
+  padding-top: 5px;
+  text-decoration: none;
+  font-size: 15px;
+   font-family: helvitica,sans-serif;
+}
+.navbar a:hover {
+  background:white;
+  color: none;
+}
+.main {
+  padding: 15px;
+  margin-top: 30px;
+  height: 7100px; 
+
+}
+div.absolute {
+  position: absolute;
+  top: 80px;
+  right: 50;
+  width: 200px;
+  height: 100px;
+}
+div.gaju{
+	position: absolute;
+	top: 20;
+	left: 80;	
+}
+div.text{
+  position: absolute;
+  top: 190px;
+  left: 720px;
+  font-size: 62px;
+ color:  #5900b3;
+ font-family: helvitica,sans-serif;
+}
+div.text1 {
+  position: absolute;
+  top: 280px;
+  left: 720px;
+    font-weight:normal;
+  font-size: 25px;
+ color:  black;
+ font-family: helvitica,sans-serif;
+}
+.fff{
+	margin-top:16px;
+	margin-bottom: 15px;
+}
+div.text2 {
+  position: absolute;
+  top: 320px;
+  left: 720px;
+    font-weight:normal;
+  font-size: 17px;
+ color:  grey;
+ font-family: helvitica,sans-serif;
+}
+div.text3{
+  position: absolute;
+  top: 380px;
+  left: 720px;
+}
+div.appbutton1{
+  position: absolute;
+  top: 380px;
+  left: 950px;
+}
+div.appbutton2{
+  position: absolute;
+	top: 800px;	
+}
+div.abcd{
+	 position: absolute;
+  top: 1400px;
+  left: 370px;
+  font-size: 35px;
+  font-weight: lighter;
+ color:  black;
+ font-family: helvitica,sans-serif;
+}
+div.image{
+	position: absolute;
+	top:1580px;
+	left: 90px;
+}
+div.aaa{
+	position: absolute;
+	 color: #404040;
+ font-family: helvitica,sans-serif;
+	font-size: 23px;
+	font-weight: bolder;
+	top:1695px;
+	left: 670px;
+}
+div.bbb{
+	position: absolute;
+	 color: black;
+ font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+	top:1740px;
+	left: 670px;
+}	
+div.ccc{
+	position: absolute;
+	top:2100px;
+	right: 90px;
+	}
+	div.ddd{
+	position: absolute;
+	 color: #404040;
+	 font-weight: bolder;
+ font-family: Helvetica, sans-serif;
+font-size: 23px;
+	top:2240px;
+	left: 120px;
+	}
+	div.eee{
+		position: absolute;
+	 color: black;
+ font-family: Arial, Helvetica, sans-serif;
+font-size: 16px;
+	top:2280px;
+	left: 120px;
+}	
+	div.ggg{
+		position: absolute;
+	top:2650px;
+	left: 90px;		
+	}
+	div.hhh{
+	position: absolute;
+	 color:#333333;
+	 font-weight: bolder;
+ font-family: helvitica,sans-serif;
+	font-size: 24px;
+	top:2765px;
+	left: 670px;
+}
+div.iii{
+	position: absolute;
+	top: 2800px;
+		 color: black;
+ font-family: Arial, Helvetica, sans-serif;
+	left: 670px;
+}
+div.jjj{
+		position: absolute;
+	 color:#333333;
+ font-family: helvitica,sans-serif;
+	font-size: 32px;
+	top:3200px;
+	left: 480px;
+}
+div.kkk{
+	position: absolute;
+	top:3350px;
+	left: 120px;
+	filter:grayscale(100%);
+}
+div.lll{
+position: absolute;
+	top:3280px;
+	left: 235px;
+	filter:grayscale(100%);
+		
+}
+div.mmm{
+	position: absolute;
+	top:3299px;
+	left: 550px;
+	filter:grayscale(100%);	
+	
+}
+div.nnn{
+	position: absolute;
+	top:3333px;
+	left: 780px;
+	filter:grayscale(100%);		
+}
+div.ooo{
+	position: absolute;
+	top:3343px;
+	left: 1040px;		
+	filter:grayscale(100%);
+}
+div.ppp{
+	position: absolute;
+	top:3024px;
+	left: 1190px;	
+	filter:grayscale(100%);	
+}
+div.qqq{
+		position: absolute;
+	top:3350px;
+	left: 5px;	
+	filter:grayscale(100%);
+}
+div.kkk:hover{
+	filter:grayscale(0%);
+}
+div.lll:hover{
+	filter:grayscale(0%);
+}
+div.mmm:hover{
+	filter:grayscale(0%);
+}
+div.nnn:hover{
+	filter:grayscale(0%);
+}
+div.ooo:hover{
+	filter:grayscale(0%);
+}
+div.ppp:hover{
+	filter:grayscale(0%);
+}
+div.qqq:hover{
+	filter:grayscale(0%);
+}
+div.rrr{
+		position: absolute;
+	top:3550px;
+	left: 450px;	
+	color:#333333;
+	font-weight: 100;
+	font-stretch: expanded;
+	 font-family: helvitica,sans-serif;
+	font-size: 39px;	
+}
+div.sss{
+		position: absolute;
+	top:3630px;
+	left: 445px;	
+	color:#333333;
+	font-stretch: expanded;
+	 font-family: helvitica,sans-serif;
+	font-size: 15px;	
+}
+div.ttt{
+	position: absolute;
+	top:3740px;
+	left: 32px;		
+}
+div.uuu{
+	position: absolute;
+	top:3670px;
+	left: 420px;		
+}
+div.vvv{
+	position: absolute;
+	top:3740px;
+	left: 920px;		
+}
+div.www{
+	font-size:25px;
+	font-color: black;
+	font-weight: bolder; 
+	 font-family: helvitica,sans-serif;
+	 position: absolute;
+	 	top:4100px;
+	left: 40px;		
+}
+div.xxx{
+	font-size:15px;
+	font-color: grey; 
+	 font-family: helvitica,sans-serif;
+	 position: absolute;
+	 	top:4140px;
+	left: 40px;		
+	text-align: center;
+}
+div.yyy{
+	font-size:30px;
+	font-color: black;
+	font-weight: bolder; 
+	 font-family: helvitica,sans-serif;
+	 position: absolute;
+	 top:4259px;
+	left: 550px;		
+}
+div.zzz{
+	font-size:15px;
+	font-color: gray; 
+	 font-family: helvitica,sans-serif;
+	 position: absolute;
+	 	top:4300px;
+	left: 500px;		
+	text-align: center;
+}
+div.haha{
+	font-size:30px;
+	font-color: black;
+	font-weight: bolder; 
+	 font-family: helvitica,sans-serif;
+	 position: absolute;
+	 	top:4120px;
+	right: 150px;		
+}
+div.apple{
+	font-size:15px;
+	font-color: grey; 
+	 font-family: helvitica,sans-serif;
+	 position: absolute;
+	 top:4170px;
+	right: 75px;		
+	text-align: center;
+	}
+	div.ball{
+	 position: absolute;
+	 top:4420px;
+	left: 404px;		
+}
+	div.cat{
+	 position: absolute;
+	 top:4420px;
+	left: 650px;		
+}
+div.dog{
+font-size:40px;
+	font-color: grey; 
+	 font-family: helvitica,sans-serif;
+	 position: absolute;
+	 top:4620px;
+	left: 470px;		
+}
+div.smile{
+	font-size:15px;
+	font-color: grey; 
+	 font-family: helvitica,sans-serif;
+	 position: absolute;
+	 top:4220px;
+	right: 140px;		
+	text-align: center;
+	}
+	div.egg{
+	 position: absolute;
+	 top:4820px;
+	left: 80px;		
+}
+	div.frog{
+	position: absolute;
+	 color:#333333;
+	 font-weight: bolder;
+ font-family: helvitica,sans-serif;
+	font-size: 24px;
+	top:4865px;
+	right: 290px;
+}
+div.goat{
+		position: absolute;
+	 color:#333333;
+ font-family: helvitica,sans-serif;
+	font-size: 15px;
+	top:4905px;
+	right: 122px;	
+}
+div.horse{
+		position: absolute;
+	 color:#333333;
+ font-family: helvitica,sans-serif;
+	font-size: 35px;
+	top:5420px;
+	right: 500px;
+	}
+	div.ice{
+		position: absolute;
+		top:5520px;
+	}
+	div.jeep{
+			position: absolute;
+			top:6400px;
+			right: 110px;
+	}
+	div.kangaroo{
+			position: absolute;
+	 color:#595959;
+ font-family: helvitica,sans-serif;
+	font-size: 25px;
+	top:6590px;
+	left: 92px;	
+	 font-weight: bolder;
+	}
+	div.luck{
+	position: absolute;
+	 color:#595959;
+ font-family: helvitica,sans-serif;
+	font-size: 16px;
+	top:6650px;
+	left: 92px;	
+	}
+	div.hyhy{
+	position: absolute;
+		font-color: grey;
+		font-size: 15px;
+			top:6990px;
+	left: 190px;	
+	}
+	div.finish{
+		display: block;
+		height: 220px;
+		width: 1260px;
+		background-color: #3d3d5c;
+	}
+	div.list{
+		color: white;
+		font-family:Arial, Helvetica, sans-serif ;
+		font-size: 15px;
+		position : absolute;
+		left: 210px;
+        top: 7230px;
+	}
+		div.lista{
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		position : absolute;
+		left: 390px;
+        top: 7230px;
+	}
+	div.listb{
+		color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		position : absolute;
+		left: 530px;
+        top: 7230px;
+	}
+		div.listc{
+		color: white;
+		font-family:  Helvetica, sans-serif;
+		font-size: 15px;
+		position : absolute;
+		left: 700px;
+        top: 7230px;
+	}
+	div.copyright{
+		color: grey;
+		font-family: helvitica,sans-serif;
+		font-size: 12px;
+		position : absolute;
+		left: 210px;
+        top: 7330px;
+	}
+	div.topic{
+		color: grey;
+		font-family: helvitica,sans-serif;
+		font-size: 12px;
+		position : absolute;
+		left: 210px;
+        top: 7200px;
+	}	
+	div.topica{
+		color: grey;
+		font-family: helvitica,sans-serif;
+		font-size: 12px;
+		position : absolute;
+		left: 390px;
+        top: 7200px;
+	}
+		div.topicb{
+		color: grey;
+		font-family: helvitica,sans-serif;
+		font-size: 12px;
+		position : absolute;
+		left: 530px;
+        top: 7200px;
+	}
+
+		div.topicc{
+		color: grey;
+		font-family: helvitica,sans-serif;
+		font-size: 12px;
+		position : absolute;
+		left: 700px;
+        top: 7200px;
+	}
+	div.topicd{
+		color: grey;
+		font-family: helvitica,sans-serif;
+		font-size: 12px;
+		position : absolute;
+		left: 850px;
+        top: 7200px;
+	}
+	div.topice{
+		color: grey;
+		font-family: helvitica,sans-serif;
+		font-size: 12px;
+		position : absolute;
+		left: 980px;
+        top: 7200px;
+	}
+	div.finisher{
+		position: absolute;
+		    top: 7210px;
+			right: 330px;
+	}
+	div.finishera{
+		position: absolute;
+		    top: 7250px;
+			right: 330px;
+	}
+	div.finisherb{
+		position: absolute;
+		    top: 7218px;
+			right: 215px;
+	}
+</style>
+	<title>Phone pe</title>
 </head>
 <body>
-<div class="container">
-    <div class="row">
-        <div class="col-sm-12">
-            <div id="my-slider" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="C:\Users\EMC003\Downloads\a (2).jpg" alt="gaju">
-                        <div class="carousel-caption">
-                            <h1>Gajendhiran.M</h1>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="C:\Users\EMC003\Downloads\b.jpeg" alt="gaju" >
-                        <div class="carousel-caption">
-                            <h1>KSR college of engineering</h1>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="C:\Users\EMC003\Downloads\IMG_20190323_093732.jpg" alt="gaju">
-                        <div class="carousel-caption">
-                            <h1>Department of computer science and engineering</h1>
-                        </div>
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">previous</span>
-                </a>
-                <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                        <span class="sr-only">previous</span>
-                    </a>
-            </div>
-        </div>
-    </div>
+<div class="navbar">
+  <a href="#logo"><img src="data:image/png;base64,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" height="50" width="110"></a>
+  <a href="#nothing">         </a>
+  <a href="#HOME" class="fff">HOME</a>
+  <a href="#ABOUT US" class="fff">ABOUT US</a>
+  <a href="#BUSINESS SOLUTION" class="fff">BUSINESS SOLUTION</a>
+  <a href="#GENERATE QR" class="fff">GENERATE QR</a>
+  <a href="#LIFE" class="fff">LIFE</a>
+  <a href="#BLOG" class="fff">BLOG</a>
+  <a href="#CAREERS" class="fff">CAREERS</a>
+  <a href="#POS" class="fff">POS</a>
+  <a href ="#CONTACT US" class="fff">CONTACT US</a>
 </div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+<div class="main">
+<div class="absolute"><img src="https://www.phonepe.com/images/backgrounds/home/hero-banner-mobile&categories-svg.svg" height="700" width="700"></div>
+</div>
+<div class="text">PhonePe</div>
+</div>
+<div class="text1">India's Payment App</div>
+</div>
+<div class="text2">BHIM UPI based App to provide a cashless and a seamless payment experience.
+</div>
+<div class="text3"><img src="https://www.phonepe.com/images/generic/batch_google_play.svg" height="60" weight="85"></div>
+</div>
+<div class="appbutton1"><img src="https://www.phonepe.com/images/generic/batch_app_store.svg" height="60" weight="85"></div>
+</div>
+<div class="appbutton2"><img src="https://www.phonepe.com/images/backgrounds/home/section2-icons-main.svg" height="500" width="1258"></div>
+</div>
+<div class="abcd">Keep it simple with PhonePe</div>
+<div class="image"><img src="https://www.phonepe.com/images/backgrounds/home/payment2x.png" height="450" weight="140"></div>
+</div>
+<div class="aaa">One app for all your payments.</div>
+<div class="bbb">From utility bills, mobile & DTH recharge,sending & requesting money , to paying your credit card bill  and insurance premium. You can do all this and more on the PhonePe app</div>
+<div class="ccc"><img src="https://www.phonepe.com/images/backgrounds/home/bank-account2x.png"  height="450" weight="140"></div>
+<div class="ddd">Your bank account is all you need.</div>
+<div class="eee">Just link your your bank account to the PhonePe app and make hassle-free,<br> secure payments directly from your bank account 24/7. Your money is <br>always in your bank ,not locked in a wallet.</div>
+<div class="ggg"><img src="https://www.phonepe.com/images/backgrounds/home/payment-mode2x.png"  height="450" weight="140"></div>
+<div class="hhh">Multiple payment modes.</div>
+<div class="iii">Choose from the options like BHIM UPI enabled bank account, PhonePe <br>wallet, Debit and credit cards to make seamless payments daily</div>
+<div class="jjj">PhonePe merchants</div>
+<div class="kkk"><img src="https://www.phonepe.com/images/backgrounds/home/en/partners/ccd-logo.svg" height="70" width="80"></div>
+<div class="lll"><img src="https://www.phonepe.com/images/backgrounds/home/en/partners/cleartrip-logo.svg" height="220" width="260"></div>
+<div class="mmm"><img src="https://www.phonepe.com/images/backgrounds/home/en/partners/ebay-logo.svg"height="190" width="170"></div>
+<div class="nnn"><img src="https://www.phonepe.com/images/backgrounds/home/en/partners/empire-logo.png"height="90" width="170"></div>
+<div class="ooo"><img src="https://www.phonepe.com/images/backgrounds/home/en/partners/faasos-logo.svg" height="70" width="80"></div>
+<div class="ppp"><img src="https://www.phonepe.com/images/backgrounds/home/en/partners/flipkart-logo.svg" height="700" width="70"></div>
+<div class="qqq"><img src="https://www.phonepe.com/images/backgrounds/home/en/partners/apollo-logo.svg" height="80" width="100"></div>
+<div class="rrr">Multiple ways to pay</div>
+<div class="sss">Download the PhonePe app & choose from a range of <br>options to make seamless payments online and offline.</div>
+<div class="ttt"><img src="https://www.phonepe.com/images/backgrounds/home/en/directTransfer.svg"><hr></div>
+<div class="uuu"><img src="https://www.phonepe.com/images/backgrounds/home/en/qrcode.svg" height="550" width="390"><hr></div>
+<div class="vvv"><img src="https://www.phonepe.com/images/backgrounds/home/en/pos.svg"><hr></div>
+<div class="www">Direct Transfer & More </div>
+<div class="xxx">Bank to Bank UPI Payments, along with <br>Wallets,          Debit & Credit cards</div>
+<div class="yyy">QR Code </div>
+<div class="zzz">Scan and pay quickly without sharing<br> your phone number</div>
+<div class="haha">POS</div>
+<div class="smile"><a href="#smile">Learn more</a></div>
+<div class="apple">The simplest and fastest way of <br>paying at local stores</div>
+<div class="ball"><img src ="https://www.phonepe.com/images/generic/batch_google_play.svg"  height="55" weight="80"></div>
+<div class="cat"><img src="https://www.phonepe.com/images/generic/batch_app_store.svg" height="55" weight="80"></div>
+<div class="dog">Earn great rewards</div>
+<div class="egg"><img src="https://www.phonepe.com/images/backgrounds/home/reward-illustration.svg"></div>
+<div class="frog">More value for your money.</div>
+<div class="goat">Get amazing cashback when you pay with PhonePe! Use the cashback <br>to pay for your next utility bill, recharge or shopping.</div>
+<div class="horse">Payments made easy</div>
+<div class="ice"><video width="1260" height="700" controls>
+ <source src="https://www.phonepe.com/media/PhonePe%20-%20Utilities%20(Hindi)%2030%20Seconds.mp4" type="video/mp4"></video></div>
+<div class="jeep"><img src="https://www.phonepe.com/images/backgrounds/home/language2x.png"  height="450" weight="140"></div>
+<div class="kangaroo">We speak your language.</div>
+<div class="luck">PhonePe is multilingual. Choose from Kannada, Marathi, Bengali,<br> English, Hindi, Tamil, Gujrati, Telugu, Malayalam, Assamese and Odia<br> languages to transact easily on the app</div>
+<div class="finish">
+<div class="list">About us<br>Business Solution<br>Generate QR<br>Report Vulnerability<br>Offline Merchants</div>
+<div class="lista">Careers<br>Contact us<br>Blog<br>Invite Friends</div>
+ <div class="listb">Terms & Conditions<br>Policy<br>Support<br>How to Pay</div>
+ <div class="listc">Facebook<br>Twitter<br>LinkedIn</div>
+ <div class="copyright">© 2017, All rights reserved</div>
+<div class="topic">General</div>
+<div class="topica">Connect</div>
+<div class="topicb">Legal</div>
+<div class="topicc">Follow us on</div>
+<div class="topicd">Download app</div>
+<div class="topice">Certifications</div>
+<div class="finisher"><img src="https://www.phonepe.com/images/generic/batch_google_play.svg" height="60" width="90"></div>
+<div class="finishera"><img src="https://www.phonepe.com/images/generic/batch_app_store.svg"height="60" width="90"></div>
+<div class="finisherb"><img src="https://www.phonepe.com/images/generic/SISA-PCI-DSS-certified-logo.png"height="30" width="60"></div>
+</div>
+</div>
+  </div>
 </body>
 </html>
